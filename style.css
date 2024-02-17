@@ -1,0 +1,307 @@
+body {
+    background-color: black;
+}
+h1{
+    color: azure;
+}
+.highlight {
+    color: purple;
+    font-weight: bold;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(6, 6, 54);
+    width: 100%;
+}
+.name{
+    margin-top: 17px;
+    color: white;
+}
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li:last-child {
+    margin-right: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white; /* changed link color */
+
+}
+.nav-links li a:hover{
+    color: purple; /* Change to the desired hover color */
+}
+
+.leftsection {
+    width: 50%; /* Adjust the width as needed */
+    float: left; /* Float the leftsection to the left */
+}
+.leftsection img{
+    width: 50%; 
+    margin-top: 30px;
+    margin-left: 30px;
+    padding-left: 80px;
+}
+
+.p {
+    margin-top: 50px;
+    width: 50%; /* Adjust the width as needed */
+    float: left; /* Float the paragraph to the left */
+    color: white;
+    align-items: center;
+}
+
+/* Clearfix to clear floats */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#element{
+    color: purple;
+}
+
+.btn
+{
+    background-color: rgb(16, 5, 46);
+    color: white;
+    border: 2px solid white;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.buttons{
+    display: flex;
+    justify-content: left;
+    gap: 20px;
+}
+.about
+{
+    background-image: url("./about.jpg");
+    background-size: cover;
+    width: 99%;
+    height: 100%;
+}
+.abtheading
+{
+    color: white;
+    margin-top: 8%;
+    margin-left: 37%; /* Move content to the right */
+    width: 60%; /* Optional: set a width for the content */
+}
+.hi
+{
+    font-size: x-large;
+    font-style: italic;
+}
+.scroll
+{
+    margin-top: 18%;
+    font-style: italic;
+}
+.images1
+{
+
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    width: 90px;
+    height: 95px;
+}
+.edu
+{
+    margin-top: 50px;
+}
+.box
+{
+    background-color: white;
+    width: 62vw;
+    height: 2px;
+    margin: 45px 0;
+    margin-bottom: 20px;
+}
+.Sch
+{
+    font-family: cursive;
+    margin-top: 5%;
+}
+.history
+{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+.img1{
+    background-color: black;
+}
+.We
+{
+    margin-top: 5px;
+}
+.WorkBox
+{
+    background-color: white;
+    height: 2px;
+}
+.cer
+{
+    font-family: cursive;
+    margin-top: 1%;
+    color: white;
+}
+.yr
+{
+    display: flex;
+    justify-content: space-between;
+}
+.Des
+{
+    color: white;
+}
+footer {
+    background-color: rgb(41, 41, 46);
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.Proj
+{
+    background-image: url("./Proj.jpg");
+    background-size: cover;
+    width: 99%;
+    height: 100%;
+}
+.one {
+    margin-top: 2%;
+    float: left;
+    width: 60%;
+    color: white;
+}
+.two{
+    margin-top: 2%;
+    float: left;
+    width: 25%;
+    color: white;
+}
+.main
+{
+    display: flex;
+    justify-content: space-between;
+}
+.inline
+{
+    color: rgb(177, 133, 22);
+}
+@media screen and (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .leftsection {
+        width: 50%;
+    }
+
+    .p {
+        width: 50%;
+    }
+    .main{
+        margin-bottom: 5%;
+    }
+    .one{
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+    .two{
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+}
+/* Styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .leftsection {
+        width: 100%;
+    }
+
+    .p {
+        width: 100%;
+    }
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        margin-top: 20px; /* Adjust as needed */
+    }
+    .abtheading
+    {
+    margin-top: 2%;;
+    margin-left: 5%; /* Move content to the right */
+    width: 99%;
+    }
+    .box
+    {
+    width: 100%;
+    }
+    .images1
+    {
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+    }
+    .edu{
+        display: flex;
+        height: 100vh;
+        align-items: flex-end;
+        margin-top: 15%;
+    }
+    .box
+    {
+        display: flex;
+        height: 2px;
+        align-items: flex-end;
+    }
+    .cer
+    {
+        margin-bottom: 20%;
+    }
+    .one
+    {
+        margin-left: 0px;
+        padding-left: 0px;
+        width: 100%;
+    }
+    .main
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .two
+    {
+        margin-left: 0px;
+        padding-left: 0px;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+}
